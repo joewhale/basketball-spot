@@ -28,6 +28,11 @@
           Parking: <%= place.parking %>
           <br>
           Water: <%= place.water %>
+          <br>
+          <hr>
+          <% if place.user.present? %>
+            <small><%= place.user.email %></small>
+          <% end %>
         </div>
       <% end %>
 
