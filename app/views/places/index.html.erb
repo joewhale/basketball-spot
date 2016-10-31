@@ -11,14 +11,20 @@
   <body>
     <h1>B-ball Spots</h1>
     <br>
-    <% @places.each do |place| %>
-      Name: <%= place.name %>
-      <br>
-      Address: <i><%= place.address %></i>
-      <br>
-      description: <%= place.description %>
-      <br><br>
-    <% end %>
+
+      <% @places.each do |place| %>
+        <div class="text-box col-xs-10 col-xs-offset-1">
+          <h1><%= place.name %></h1>
+          <br>
+          <strong>Address:</strong> <i><%= place.address %></i>
+          <br><br>
+          <strong>Description:</strong> <%= place.description %>
+        </div>
+      <% end %>
+
+
+
+
 
   </body>
 </html>
