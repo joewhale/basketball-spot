@@ -1,0 +1,26 @@
+<div class="text-box col-xs-10 col-xs-offset-1">
+  <h1>Enter a new Basketball Spot</h1>
+  <%= simple_form_for @place do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <br>
+    <div class="buttons">
+      <div class="radio_buttons col-xs-4">
+        <%= f.input :restroom, as: :radio_buttons, collection: %w[Yes No Not\ Sure], label: "Are there restrooms nearby?"%>
+      </div>
+      <div class="radio_buttons col-xs-4">
+        <%= f.input :parking, as: :radio_buttons, collection: %w[Yes No Not\ Sure], label: "Is there plenty of parking?"%>
+      </div>
+      <div class="radio_buttons col-xs-4">
+        <%= f.input :water, as: :radio_buttons, collection: %w[Yes No Not\ Sure], label: "Is there water nearby?"%>
+
+      </div>
+    </div>
+
+    <div><%= f.submit 'Create', class: 'btn btn-primary' %></div>
+
+    <br>
+
+  <% end %>
+</div>
