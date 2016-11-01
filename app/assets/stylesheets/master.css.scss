@@ -29,6 +29,7 @@ body {
   background:url('/assets/irongrip.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 2px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -41,7 +42,9 @@ body {
   height: 300px;
 }
 
-
+.jumbotron {
+  text-align: center;
+}
 
 
 // .radio_buttons {
