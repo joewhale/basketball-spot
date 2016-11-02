@@ -21,7 +21,7 @@
       <p><a class="btn btn-primary btn-lg" href="http://www.nba.com/" role="button">Learn more</a></p>
     </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="text-center col-xs-12">
       <h1 class="text-center"><i class="glyphicon glyphicon-arrow-down"></i> Places to Hoop <i class="glyphicon glyphicon-arrow-down"></i></h1>
@@ -30,9 +30,13 @@
       <br><br><br><br><br>
       <% @places.each do |place| %>
         <div class="text-box col-xs-10 col-xs-offset-1">
-          <h1><%= link_to place.name, place_path(place) %></h1>
+          <h1><%= place.name %></h1>
+          <br>
+
           <br>
           <strong>Address:</strong> <i><%= place.address %></i>
+          <br>
+          <%= link_to 'click here for map location', place_path(place) %>
           <br><br>
           <strong>Description:</strong> <%= place.description %>
           <br>
