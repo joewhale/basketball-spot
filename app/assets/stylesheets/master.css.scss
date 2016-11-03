@@ -22,8 +22,11 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: url('/assets/retina_wood.png');
   // background: url('/assets/ice_age.png');
+
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
+
+
 
 .navbar.navbar-inverse {
   background:url('/assets/irongrip.png');
@@ -44,9 +47,12 @@ body {
 
 .jumbotron {
   text-align: center;
-  
+  margin-bottom: 0;
 }
 
+img {
+  width:100%;
+}
 
 // .radio_buttons {
 //   color:blue;
