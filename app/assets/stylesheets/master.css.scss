@@ -24,8 +24,34 @@ body {
   // background: url('/assets/ice_age.png');
 
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+
 }
 
+.frosty {
+  background:rgba(0,0,0, 0.5);
+  color:white;
+}
+
+.frosty h1 {
+
+  font-weight: 300;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+.frosty h2 {
+
+  font-weight: 300;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+#court {
+  background: url('/assets/court.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
 
 
 .navbar.navbar-inverse {
