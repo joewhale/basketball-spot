@@ -17,14 +17,14 @@
 
       <br><br><br><br><br>
       <% @places.each do |place| %>
-        <div class="text-box col-xs-10 col-xs-offset-1 ">
+        <div class="frosty col-xs-10 col-xs-offset-1 ">
           <h1><%= place.name %></h1>
           <br>
 
           <br>
           <strong>Address:</strong> <i><%= place.address %></i>
           <br>
-          <%= link_to 'click here for map location', place_path(place) %>
+          <p><%= link_to 'click here for map location', place_path(place) %></p>
           <br><br>
           <strong>Description:</strong> <%= place.description %>
           <br>
