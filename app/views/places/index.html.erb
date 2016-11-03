@@ -37,10 +37,11 @@
           <br>
           Water: <%= place.water %>
           <br>
-          <hr>
+
           <% if place.user.present? %>
-            <small><%= place.user.email %></small>
+            <small><strong>User: </strong> <%= place.user.email %></small>
           <% end %>
+          <hr>
         </div>
       <% end %>
 
