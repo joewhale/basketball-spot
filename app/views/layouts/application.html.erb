@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
 </head>
 <body>
   <nav class="navbar navbar-inverse" role="navigation">
@@ -38,6 +38,8 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to 'Basketball Etiquette', static_pages_rules_path %></li>
+
           <% if user_signed_in? %>
             <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
           <% else %>
